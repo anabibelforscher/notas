@@ -1,4 +1,7 @@
 package acc.br.notas.repository
 
-interface NoteRepository {
-}
+
+import acc.br.notas.model.Note
+import org.springframework.data.repository.CrudRepository
+
+interface NoteRepository : CrudRepository<Note, Long>
